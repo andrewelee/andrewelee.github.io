@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Snake</title>
+		<script src="jquery.js"></script>
+		<script src="snake.js"></script>
+		<script src="snake_ui.js"></script>
+		<script src="board.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Oxygen:300,400|Montserrat' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="snake.css">
+	</head>
+	
+	<body>
+		<h1>Snake: An Odyssey</h1>
+		
+		<div class="wrapper">
+			<section class="game">
+				<div class="board group"></div>
+			
+				<section class="game-status">
+					
+					<div id="instructions"><p>Select a mode from the right.</p>
+					<p>Arcade is the classic game. Level mode has a few predefined levels.</div>
+				
+					<div id="gameover">
+						<h1>Gameover!</h1>
+						<h2>Rank: <strong id="rank"></strong></h2>
+					</div>
+					
+				</section>
+			</section>
+			
+			<section class="sidebar">
+				<h3 id="game-type">Score: <strong id="stat">0</strong> </h3>
+				<h3 id="level-apples">Apples left: <strong id="appleReq">0</strong> </h3>
+				<h3>Mode:</h3>
+				<button id="start" class="start">Arcade</button>
+				<button id="level" class="start">Level</button>
+			</section>
+	
+		</div>
+		
+		<script>
+		$(document).ready(function () {
+			var game = new SnakeGame.View($(".game"));
+			$('#instructions').addClass('show');
+			
+			var startGame = function (mode) {
+				$('#instructions').removeClass();
+				$('.game-status').addClass('hidden');
+				
+				if (mode === "arcade") {
+					game.start(0);
+				} else if (mode === "level") {
+					game.start(1);
+				}
+			}
+			
+			$("button#start").on("click", function () {
+				$('.start').prop('disabled', true)
+				game = new SnakeGame.View($(".game"));
+				startGame("arcade");
+			});
+			
+			$("button#level").on("click", function () {
+				$('.start').prop('disabled', true)
+				game = new SnakeGame.View($(".game"));
+				startGame("level");
+			});
+		});
+		
+		</script>
+	</body>
+</html>

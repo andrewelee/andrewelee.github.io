@@ -1,0 +1,54 @@
+<div class="wrapper content">
+
+	<nav class="projects">
+		<ul class="projects group">
+			<li class="ot project">
+				<img class="game" src="images/games/ot-thumb.png">
+				<h1>PYTHON</h1>
+				<p>FANTASY</p>
+				<p>OREGON</p>
+				<p>TRAIL</p>
+			</li>
+
+			<li class="eq project">
+				<img class="game" src="images/games/eq-thumb.png">
+				<h1>GAMEMAKER</h1>
+				<p>ARCADE</p>
+				<p>RPG</p>
+			</li>
+			<li class="citw project">
+				<img class="game" src="images/games/citw-thumb.png">
+				<h1>GAMEMAKER</h1>
+				<p>HORROR</p>
+				<p>PUZZLE</p>
+			</li>
+			<li  class="prototypes project">
+				<img class="game" src="images/proto-thumb.png">
+				<h1>PENCIL</h1>
+				<h1>PAPER</h1>
+				<p class="game">PROTOTYPES</p>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="project-content" class="project content">
+	
+		<!-- <img src="images/truffle-pic.png"> -->
+		<div class="project-info">
+			<h1>Game Design</h1>
+			<p> I have always been really interested in designing games. I spend a lot of time thinking about systems and paper prototyping my ideas. Most of my projects have a retro NES/SNES aesthetic, but I'd love to create a project with some nice vector art. You can check out some of my past projects above! </p>
+			<p> I started programming games back in elementary school using a program called ZZT. I later began learning Python and using the Pygame framework. Recently, I have been using the Gamemaker engine for quicker demoing and production. </p>
+		</div>
+	</div>
+
+</div>
+
+<script>
+$("li.project").click(function(event){
+ 	event.preventDefault();
+
+ 	//first class is the page we are redirecting to
+ 	var page = $(this).attr('class').split(" ")[0]
+ 	$("#project-content").load("content/pages/" + page + ".html");
+});
+</script>

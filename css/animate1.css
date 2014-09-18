@@ -1,0 +1,236 @@
+/* ANIMATIONS */
+
+/* Setting up the "aboutAnim" for all browser types
+-------------------------------------------------*/
+ @keyframes aboutAnim {
+    0% {
+        background-color: #736d6d;
+    }
+    50% {
+        background-color: #807a7a;
+    }
+    100% {
+        background-color: #736d6d;
+    }
+}
+/* Firefox */
+ @-moz-keyframes aboutAnim {
+    0% {
+        background-color: #736d6d;
+    }
+    50% {
+        background-color: #807a7a;
+    }
+    100% {
+        background-color: #736d6d;
+    }
+}
+/* Safari and Chrome */
+ @-webkit-keyframes aboutAnim {
+    0% {
+        background-color: #736d6d;
+    }
+    50% {
+        background-color: #807a7a;
+    }
+    100% {
+        background-color: #736d6d;
+    }
+}
+/* Opera */
+ @-o-keyframes aboutAnim {
+    0% {
+        background-color: #736d6d;
+    }
+    50% {
+        background-color: #807a7a;
+    }
+    100% {
+        background-color: #736d6d;
+    }
+}
+
+/* Setting up the "projectsAnim" for all browser types
+-------------------------------------------------*/
+ @keyframes projectsAnim {
+    0% {
+        background-color: #3a8797;
+    }
+    50% {
+        background-color: #4197A8;
+    }
+    100% {
+        background-color: #3a8797;
+    }
+}
+/* Firefox */
+ @-moz-keyframes projectsAnim {
+    0% {
+        background-color: #3a8797;
+    }
+    50% {
+        background-color: #4197A8;
+    }
+    100% {
+        background-color: #3a8797;
+    }
+}
+/* Safari and Chrome */
+ @-webkit-keyframes projectsAnim {
+    0% {
+        background-color: #3a8797;
+    }
+    50% {
+        background-color: #4197A8;
+    }
+    100% {
+        background-color: #3a8797;
+    }
+}
+/* Opera */
+ @-o-keyframes projectsAnim {
+    0% {
+        background-color: #3a8797;
+    }
+    50% {
+        background-color: #4197A8;
+    }
+    100% {
+        background-color: #3a8797;
+    }
+}
+
+/* Setting up the "gamesAnim" for all browser types
+-------------------------------------------------*/
+ @keyframes gamesAnim {
+    0% {
+        background-color: #a59782;
+    }
+    50% {
+        background-color: #B8A891 ;
+    }
+    100% {
+        background-color: #a59782;
+    }
+}
+/* Firefox */
+ @-moz-keyframes gamesAnim {
+    0% {
+        background-color: #a59782;
+    }
+    50% {
+        background-color: #B8A891 ;
+    }
+    100% {
+        background-color: #a59782;
+    }
+}
+/* Safari and Chrome */
+ @-webkit-keyframes gamesAnim {
+    0% {
+        background-color: #a59782;
+    }
+    50% {
+        background-color: #B8A891 ;
+    }
+    100% {
+        background-color: #a59782;
+    }
+}
+/* Opera */
+ @-o-keyframes gamesAnim {
+    0% {
+        background-color: #a59782;
+    }
+    50% {
+        background-color: #B8A891 ;
+    }
+    100% {
+        background-color: #a59782;
+    }
+}
+
+/* Setting up the "contactAnim" for all browser types
+-------------------------------------------------*/
+ @keyframes contactAnim {
+    0% {
+        background-color: #99b0b6;
+    }
+    50% {
+        background-color: #ABC4CB;
+    }
+    100% {
+        background-color: #99b0b6;
+    }
+}
+/* Firefox */
+ @-moz-keyframes contactAnim {
+    0% {
+        background-color: #99b0b6;
+    }
+    50% {
+        background-color: #ABC4CB;
+    }
+    100% {
+        background-color: #99b0b6;
+    }
+}
+/* Safari and Chrome */
+ @-webkit-keyframes contactAnim {
+    0% {
+        background-color: #99b0b6;
+    }
+    50% {
+        background-color: #ABC4CB;
+    }
+    100% {
+        background-color: #99b0b6;
+    }
+}
+/* Opera */
+ @-o-keyframes contactAnim {
+    0% {
+        background-color: #99b0b6;
+    }
+    50% {
+        background-color: #ABC4CB;
+    }
+    100% {
+        background-color: #99b0b6;
+    }
+}
+
+/* fadein */
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}

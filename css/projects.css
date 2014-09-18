@@ -1,0 +1,183 @@
+/* Project Nav */
+
+.project, .project-info {
+	font-family: "open sans";
+	font-weight: 300;
+}
+
+.wrapper.content {
+	padding: 20px 20px;
+	box-sizing: border-box;
+}
+
+nav.projects {
+	height:100px;
+	width:100%;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
+
+}
+
+nav.projects ul li {
+	z-index: 100;
+	width: 25%;
+	height: 100px;
+	float: left;
+	box-sizing: border-box;
+	transition: 0.2s;
+	overflow: hidden;
+	padding: 10px;
+	position: relative;
+}
+
+nav.projects ul li:not(:last-child) {
+    border-right: 1px solid #ddd;
+ }
+
+nav.projects ul li:hover {
+	background: #eee;
+	cursor: pointer;
+}
+
+.product-content {
+	padding: 20px;
+}
+
+nav.projects img {
+	float:left;
+	margin-right: 10px;
+}
+
+nav.projects img.game {
+	float:left;
+	margin-right: 10px;
+	border-radius: 10px;
+}
+
+nav.projects h1 {
+	float:left;
+	font-family: 'Open Sans';
+	font-size: 12px;
+	font-weight: 400;
+	color: #aaa;
+	display: block;
+width: 50px;
+}
+
+nav.projects p {
+	float:left;
+	font-weight: 700;
+}
+
+nav.projects p.game {
+	float: left;
+	font-weight: 700;
+	font-size: 13.5px;
+	position: absolute;
+	padding: 33px;
+	padding-left: 105px;
+}
+
+
+/* Info */
+
+.project-info {
+	float: right;
+	width: 370px;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+.project-info h1 {
+	font-family: 'Montserrat';
+	font-size: 24px;
+	padding-bottom: 5px;
+}
+
+.project-info p {
+	padding: 10px 0;
+	text-align: justify;
+	border-bottom:1px dotted #ccc;
+}
+
+button.project  {
+	margin-top: 10px;
+	padding: 10px 30px;
+	border: 3px solid #000;
+	background: #fff;
+	font-family: 'Montserrat';
+	font-size: 20px;
+	font-weight: 400;
+	transition: 0.3s;
+}
+
+button.project:hover  {
+	color: #fff;
+	background: #FA5050;
+	border: 3px solid #FA5050;
+	cursor: pointer;
+}
+
+/* Testers */
+
+.image-placeholder {
+	height: 300px;
+	width: 400px;
+	background: #000;
+	float:left;
+}
+
+/* GAME page specific */
+.project.content.image img{
+	text-align: center;
+
+}
+
+.image {
+	display: inline-block;
+	width: 400px;
+	text-align: center;
+		margin-top: 30px;
+	float: left;
+}
+
+.tab {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #ccc;
+	display: inline-block;
+	transition: 0.2s;
+}
+
+.tab:hover {
+	background: #999;
+	cursor: pointer;
+}
+
+.tab.active, .tab.active:hover {
+	background: #333333 ;
+}
+
+.image-selector{
+	width: 400px;
+display: inline-block;
+text-align: center;
+}
+
+.enlarge:hover {
+	cursor: pointer;
+}
+
+.caption {
+	opacity: 0;
+	transition: 0.2s;
+}
+
+.caption.enlarge {
+	opacity: 1;
+}
+
+.caption.enlarge:hover {
+	text-decoration: underline;
+}

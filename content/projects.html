@@ -1,0 +1,55 @@
+<div class="wrapper content">
+
+	<nav class="projects">
+		<ul class="projects group">
+			<li class="truffle project">
+				<img src="images/projects/truffle-thumb.png">
+				<h1>RAILS</h1>
+				<h1>BACKBONE</h1>
+				<p>TRUFFLE</p>
+			</li>
+
+			<li class="trello project">
+				<img src="images/projects/comingsoon-thumb.png">
+				<h1>RAILS</h1>
+				<h1>BACKBONE</h1>
+				<p>TRELLO</p>
+			</li>
+			<li class="snake project">
+				<img src="images/projects/snake-thumb.png">
+				<h1>JAVASCRIPT</h1>
+				<p>SNAKE</p>
+			</li>
+			<li class="chess project">
+				<img src="images/projects/chess-thumb.png">
+				<h1>RUBY</h1>
+				<p>CHESS</p>
+			</li>
+		</ul>
+	</nav>
+
+	<div id="project-content" class="project content">
+		<img src="images/projects/truffle-pic.png">
+		<div class="project-info">
+			<h1>truffle</h1>
+			<p>Truffle is a site that improves the Amazon window shopping experience
+			for users by offering a cleaner interface to browse products
+			as well as a number of social features.
+			</p>
+			<p>Ruby on Rails, Backbone.js, CSS, jQuery</p>
+			<button class="project">CHECK IT OUT</button>
+			<button class="project">GITHUB</button>
+		</div>
+	</div>
+
+</div>
+
+<script>
+$("li.project").click(function(event){
+ 	event.preventDefault();
+
+ 	//first class is the page we are redirecting to
+ 	var page = $(this).attr('class').split(" ")[0]
+ 	$("#project-content").load("content/pages/" + page + ".html");
+});
+</script>

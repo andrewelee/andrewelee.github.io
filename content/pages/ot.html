@@ -1,0 +1,86 @@
+<div class="image"><img id="game-pic" src="images/games/OT1.png">
+
+	<div class="image-selector">
+		<span class="1 tab"></span>
+		<span class="2 tab"></span>
+		<span class="3 tab"></span>
+		<span class="4 tab"></span>
+	</div>
+	<p class="caption">Click to enlarge</p>
+</div>
+
+
+<div class="project-info">
+	<h1>Fantasy Oregon Trail</h1>
+	<p>This game was inspired by Oregon Trail. I wanted to fuse additional
+	elements such as classes, combat, and even unlockable content. I started out
+	making a physical paper version of the game to demo it and then began coding it
+	in Python.
+	</p>
+	<p>Python</p>
+	<p class="blurb">This was a basic party select screen. The classes are mostly just placeholders.</p>
+	
+</div>
+
+<div id="modal" class="modal">
+
+    <article class="modal-content">
+      <span class="modal-close hide-modal">&times;</span>
+      <img class="modal-img" src="images/prototypes/ot-proto1-full.jpg">
+    </article>
+
+    <div class="modal-screen hide-modal"></div>
+
+ </div>
+
+<script>
+	
+	$(".1").addClass("active");
+
+	$("span").click(function(event){
+	 	event.preventDefault();
+	 	var image = parseInt(event.target.className.split(" ")[0])
+	 	
+	 	if (image === 1){
+	 		$("#game-pic").removeClass("enlarge");
+	 		$(".caption").removeClass("enlarge");
+	 		$("#game-pic").attr("src", "images/games/OT1.png");
+	 		$('p.blurb').text('This is a basic party select screen. The classes are mostly just placeholders.');
+	 		$("span").removeClass("active");
+	 		$(".1").addClass("active");
+	 	} else if (image === 2){
+	 		$("#game-pic").removeClass("enlarge");
+	 		$(".caption").removeClass("enlarge");
+	 		$("#game-pic").attr("src", "images/games/OT2.png");
+	 		$('p.blurb').text("Players experience randomized events during the game. Here, the party has just encountered a wandering goblin in a dungeon which will lead to a battle scene.");
+	 		$("span").removeClass("active");
+	 		$(".2").addClass("active");
+	 	} else if (image === 3){
+	 		$("#game-pic").removeClass("enlarge");
+	 		$(".caption").removeClass("enlarge");
+	 		$("#game-pic").attr("src", "images/games/OT3.png");
+	 		$('p.blurb').text("Here is a mockup of the battle system. Players choose a single combatant and can have other party members use class-specific support abilities to assist.");
+	 		 $("span").removeClass("active");
+	 		$(".3").addClass("active");
+	 	} else if (image === 4){
+	 		$("#game-pic").attr("src", "images/prototypes/ot-proto1.jpg");
+	 		$("#game-pic").addClass("enlarge");
+	 		$(".caption").addClass("enlarge");
+	 		$('p.blurb').text("I first tested the game by making a physical prototype of over a hundred cards. This helped me refine the mechanics and figure out my game as a whole. [Click the image to enlarge]");
+	 		 $("span").removeClass("active");
+	 		$(".4").addClass("active");
+	 	}
+	 });
+
+	window.showModal = function(){
+		$("#modal").addClass("is-active");
+	};
+
+	window.hideModal = function(){
+		$("#modal").removeClass("is-active")
+	};
+
+	$("body").on("click", ".hide-modal", window.hideModal);
+	$(".image").on("click", ".enlarge", window.showModal);
+
+</script>

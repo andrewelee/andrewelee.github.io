@@ -1,0 +1,91 @@
+<div class="image"><img id="game-pic" src="images/games/eq1.png">
+
+	<div class="image-selector">
+		<span class="1 tab"></span>
+		<span class="2 tab"></span>
+		<span class="3 tab"></span>
+		<span class="4 tab"></span>
+		<span class="5 tab"></span>
+	</div>
+	<p class="caption">Click to enlarge</p>
+</div>
+
+
+<div class="project-info">
+	<h1>Equipment Game</h1>
+	<p>This game was made for a Ludum Dare competition. It is a randomized arcade-style RPG where the player has to manage a party of adventurers through repeated battles. The project is almost complete, though I have a lot of remaining sprites to draw.
+	</p>
+	<p>Gamemaker</p>
+	<p class="blurb">Enemy Generation Screen: The game chose to generate an Arcane Ooze which happens to have the 'One Trick Pony' trait limiting it to only one skill.</p>
+	
+</div>
+
+<div id="modal" class="modal">
+
+    <article class="modal-content">
+      <span class="modal-close hide-modal">&times;</span>
+      <img class="modal-img" src="images/prototypes/eq-proto-full.jpg">
+    </article>
+
+    <div class="modal-screen hide-modal"></div>
+
+ </div>
+
+<script>
+	
+	$(".1").addClass("active");
+
+	$("span").click(function(event){
+	 	event.preventDefault();
+	 	var image = parseInt(event.target.className.split(" ")[0])
+	 	
+	 	if (image === 1){
+	 		$("#game-pic").removeClass("enlarge");
+	 		$(".caption").removeClass("enlarge");
+	 		$("#game-pic").attr("src", "images/games/eq1.png");
+	 		$('p.blurb').text("Enemy Generation Screen: The game chose to generate an Arcane Ooze which happens to have the 'One Trick Pony' trait limiting it to only one skill.");
+	 		$("span").removeClass("active");
+	 		$(".1").addClass("active");
+	 	} else if (image === 2){
+	 		$("#game-pic").removeClass("enlarge");
+	 		$(".caption").removeClass("enlarge");
+	 		$("#game-pic").attr("src", "images/games/eq2.png");
+	 		$('p.blurb').text("Party Select Screen: The player is given a choice of 6 randomly selected heroes. There are about 10 in the current build.");
+	 		$("span").removeClass("active");
+	 		$(".2").addClass("active");
+	 	} else if (image === 3){
+	 		$("#game-pic").removeClass("enlarge");
+	 		$(".caption").removeClass("enlarge");
+	 		$("#game-pic").attr("src", "images/games/eq3.png");
+	 		$('p.blurb').text("Inventory Screen: Here's where the magic happens. The party has to be equipped as best as possible based on their generated enemy.");
+	 		 $("span").removeClass("active");
+	 		$(".3").addClass("active");
+	 	} else if (image === 4){
+			$("#game-pic").removeClass("enlarge");
+	 		$(".caption").removeClass("enlarge");
+	 		$("#game-pic").attr("src", "images/games/yeti.png");
+	 		$('p.blurb').text("Every game that can have a yeti probably has one. My game was no exception. Here's a yeti I drew.");
+	 		 $("span").removeClass("active");
+	 		$(".4").addClass("active");
+	 	} else if (image === 5){
+	 		$("#game-pic").attr("src", "images/prototypes/eq-proto.jpg");
+	 		$("#game-pic").addClass("enlarge");
+	 		$(".caption").addClass("enlarge");
+	 		$('p.blurb').text("I had a pretty good idea of how this game would flow. Here's a scan of an early concept. [Click the image to enlarge]");
+	 		 $("span").removeClass("active");
+	 		$(".5").addClass("active");
+	 	}
+	 });
+
+	window.showModal = function(){
+		$("#modal").addClass("is-active");
+	};
+
+	window.hideModal = function(){
+		$("#modal").removeClass("is-active");
+	};
+
+	$("body").on("click", ".hide-modal", window.hideModal);
+	$(".image").on("click", ".enlarge", window.showModal);
+
+</script>

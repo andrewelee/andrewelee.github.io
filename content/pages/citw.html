@@ -1,0 +1,69 @@
+<div class="image"><img id="game-pic" src="images/games/citw1.png">
+
+	<div class="image-selector">
+		<span class="1 tab"></span>
+		<span class="2 tab"></span>
+	</div>
+	<p class="caption">Click to enlarge</p>
+</div>
+
+
+<div class="project-info">
+	<h1>Horror Puzzle Game</h1>
+	<p>I really enjoyed the movie Cabin in the Woods and thought it would be interesting to try
+	making a puzzle game that used a similar premise as the theme. The player uses different monsters
+	to try to eat the humans in a certain number of turns.
+	</p>
+	<p>Gamemaker</p>
+	<p class="blurb">Here is a mock up of a grid-based set up for the game. Even though I like this look, I might go with a different gameplay mechanic instead.</p>
+	
+</div>
+
+<div id="modal" class="modal">
+
+    <article class="modal-content">
+      <span class="modal-close hide-modal">&times;</span>
+      <img class="modal-img" src="images/prototypes/citw-proto-full.jpg">
+    </article>
+
+    <div class="modal-screen hide-modal"></div>
+
+ </div>
+
+<script>
+	
+	$(".1").addClass("active");
+
+	$("span").click(function(event){
+	 	event.preventDefault();
+	 	var image = parseInt(event.target.className.split(" ")[0])
+	 	
+	 	if (image === 1){
+	 		$("#game-pic").removeClass("enlarge");
+	 		$(".caption").removeClass("enlarge");
+	 		$("#game-pic").attr("src", "images/games/citw1.png");
+	 		$('p.blurb').text('Here is a mock up of a grid-based set up for the game. Even though I like this look, I might go with a different gameplay mechanic instead.');
+	 		$("span").removeClass("active");
+	 		$(".1").addClass("active");
+	 	} else if (image === 2){
+	 		$("#game-pic").attr("src", "images/prototypes/citw-proto.jpg");
+	 		$("#game-pic").addClass("enlarge");
+	 		$(".caption").addClass("enlarge");
+	 		$('p.blurb').text("Here are some of the game docs I made for this project. This sheet covers a few things I haven't implemented yet such as a stage select screen and also considers a different movement style.");
+	 		 $("span").removeClass("active");
+	 		$(".2").addClass("active");
+	 	}
+	 });
+
+	window.showModal = function(){
+		$("#modal").addClass("is-active");
+	};
+
+	window.hideModal = function(){
+		$("#modal").removeClass("is-active");
+	};
+
+	$("body").on("click", ".hide-modal", window.hideModal);
+	$(".image").on("click", ".enlarge", window.showModal);
+
+</script>
