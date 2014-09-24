@@ -439,5 +439,19 @@ ul.nav {
 	.box {
 		line-height: 75px;
 	}
+	
+  .modal-content {
+    position: absolute;
+    z-index: 1000;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    width: 640px;
+    min-height: 480px;
+    padding: 50px;
+    margin-left: -375px;
+    margin-top: -250px;
+    border-radius: 25px;
+  }
 }
 
