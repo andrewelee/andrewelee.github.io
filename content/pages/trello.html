@@ -2,11 +2,12 @@
 <div class="image-selector">
 	<span class="1 tab"></span>
 	<span class="2 tab"></span>
+	<span class="3 tab"></span>
 </div>
 
 <div class="project-info">
 	<h1>Trello</h1>
-	<p>This is a basic clone of the Trello web app which mimics some of the basic functionality. It's still missing some features and hasn't been pushed online at this point.
+	<p class="blurb">This is a basic clone of the Trello web app which mimics some of the basic functionality. It's still missing some features and hasn't been pushed online at this point.
 	</p>
 	<p>Ruby on Rails, Backbone.js, CSS, jQuery</p>
 	<button class="project">CHECK IT OUT</button>
@@ -23,15 +24,19 @@ $(".1").addClass("active");
 	 	
 	 	if (image === 1){
 	 		$("#project-pic").attr("src", "images/projects/trello1.png");
-	 		$('p.blurb').text("This is a basic clone of the Trello web app which mimics some of the basic functionality. It's still missing some features and hasn't been pushed online at this point.");
+	 		$('p.blurb').text("This is a basic clone of the Trello web app which mimics some of the basic functionality. It's still missing some features and hasn't been pushed online at this point. Users can specify a color for a board which shows up on the the board button.");
 	 		$("span").removeClass("active");
 	 		$(".1").addClass("active");
 	 	} else if (image === 2){
 	 		$("#project-pic").attr("src", "images/projects/trello2.png");
-	 		$('p.blurb').text("This is a basic clone of the Trello web app which mimics some of the basic functionality. It's still missing some features and hasn't been pushed online at this point.");
-	 		$('p.blurb').text("Players experience randomized events during the game. Here, the party has just encountered a wandering goblin in a dungeon which will lead to a battle scene.");
+	 		$('p.blurb').text("Here is the view the user sees after selecting one of the boards which consists of lists and cards which can be dragged/sorted.");
 	 		$("span").removeClass("active");
 	 		$(".2").addClass("active");
+	 	} else if (image === 3){
+	 		$("#project-pic").attr("src", "images/projects/trello3.png");
+	 		$('p.blurb').text("Here is a close up of the elements from the previous image.");
+	 		$("span").removeClass("active");
+	 		$(".3").addClass("active");
 	 	}
 	 });
 
