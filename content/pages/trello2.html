@@ -1,0 +1,51 @@
+<img id="project-pic" src="images/projects/trello1.png">
+	<div class="image-selector">
+		<span class="1 tab"></span>
+		<span class="2 tab"></span>
+		<span class="3 tab"></span>
+	</div>
+<div class="project-info">
+	<h1>Trello</h1>
+	<p>This is a basic clone of the Trello web app which mimics
+	some of the basic functionality. It's still missing some
+	features and hasn't been pushed online at this point.
+	</p>
+	<p>Ruby on Rails, Backbone.js, CSS, jQuery</p>
+	<button class="project">CHECK IT OUT</button>
+	<button class="project">GITHUB</button>
+</div>
+
+<script>
+	$(".1").addClass("active");
+
+	$("span").click(function(event){
+	 	event.preventDefault();
+	 	var image = parseInt(event.target.className.split(" ")[0])
+	 	
+	 	if (image === 1){
+	 		$("#project-pic").attr("src", "images/projects/trello1.png");
+	 		$('p.blurb').text("This is a basic clone of the Trello web app which mimics
+	some of the basic functionality. It's still missing some
+	features and hasn't been pushed online at this point.");
+	 		$("span").removeClass("active");
+	 		$(".1").addClass("active");
+	 	} else if (image === 2){
+	 		$("#project-pic").attr("src", "images/projects/trello2.png");
+	 		$('p.blurb').text("Here is the view when a user clicks on one of the boards showing lists and cards.");
+	 		$("span").removeClass("active");
+	 		$(".2").addClass("active");
+	 	} else if (image === 3){
+	 		$("#project-pic").attr("src", "images/projects/trello3.png");
+	 		$('p.blurb').text("A close up of the lists/cards from the previous image.");
+	 		 $("span").removeClass("active");
+	 		$(".3").addClass("active");
+	 	}
+	});
+</script>
+
+<style>
+.image-selector {
+	position: absolute;
+	display: block;
+}
+</style>
