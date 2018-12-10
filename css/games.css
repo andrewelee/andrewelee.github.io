@@ -1,0 +1,75 @@
+/* RESET */
+
+html, body, h1, ul, li, p, div, article, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  list-style: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  display: inline-block;
+  box-sizing: content-box;
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  color: inherit;
+}
+
+a {
+  color: #b3b3b3;
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+  font-size: 16px;
+}
+
+a:hover {
+  color: black
+}
+
+.wrapper {
+  padding: 50px;
+}
+
+.menu {
+  height: 100%;
+  width: 100px; 
+  position: fixed;
+  left: 50px;
+  padding-top: 20px;
+}
+
+.content {
+  padding-left: 200px;
+  max-width: 800px;
+}
+
+.divider-container {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+.divider {
+  border: none;
+  color: #bbb;
+  background-color: #bbb;
+  height: 1px;
+}
+
+.game h2{
+  font-size: 32px;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.game p {
+  font-family: 'Raleway', sans-serif;
+}
