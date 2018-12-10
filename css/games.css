@@ -25,10 +25,10 @@ button {
 }
 
 a {
-  color: #b3b3b3;
+  color: #9a9a9a;
   font-family: "Source Sans Pro";
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 a:hover {
@@ -48,8 +48,8 @@ a:hover {
 }
 
 .content {
-  padding-left: 200px;
-  max-width: 800px;
+  padding-left: 150px;
+  max-width: 1000px;
 }
 
 .divider-container {
@@ -63,6 +63,10 @@ a:hover {
   height: 1px;
 }
 
+.game {
+  padding: 25px 0;
+}
+
 .game h2{
   font-size: 32px;
   font-family: "Source Sans Pro", sans-serif;
@@ -70,6 +74,9 @@ a:hover {
   font-weight: 700;
 }
 
-.game p {
+.game .info p {
   font-family: 'Raleway', sans-serif;
+  margin: 0 0 1em;
+  max-width: 600px;
+  text-align: justify;
 }
