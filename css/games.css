@@ -90,7 +90,7 @@ a:hover {
 }
 
 @media only screen 
-  and (max-device-width: 920px) {
+  and (max-width: 920px) {
 
   .menu {
     display: none;
