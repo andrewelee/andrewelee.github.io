@@ -64,7 +64,7 @@ a:hover {
 }
 
 .game {
-  padding: 25px 0;
+  padding: 25px 0 0;
 }
 
 .game h2{
@@ -74,9 +74,12 @@ a:hover {
   font-weight: 700;
 }
 
+.info {
+  max-width: 600px;
+}
+
 .game .info p {
   font-family: 'Raleway', sans-serif;
   margin: 0 0 1em;
-  max-width: 600px;
   text-align: justify;
 }
