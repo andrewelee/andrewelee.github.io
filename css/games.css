@@ -35,6 +35,12 @@ a:hover {
   color: black
 }
 
+h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 48px;
+  font-weight: 100;
+}
+
 .wrapper {
   padding: 50px;
 }
