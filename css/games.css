@@ -35,6 +35,11 @@ a:hover {
   color: black
 }
 
+a.link {
+  font-weight: 300;
+  text-transform: none;
+}
+
 h1 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 48px;
@@ -80,22 +85,11 @@ h1 {
   font-weight: 700;
 }
 
-.game a {
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.game a.twitter {
-  font-weight: 300;
-  text-transform: none; 
-}
-
 .info {
   max-width: 600px;
 }
 
-.game .info p {
+.game .info p, .about p {
   font-family: 'Raleway', sans-serif;
   margin: 0 0 1em;
   text-align: justify;
