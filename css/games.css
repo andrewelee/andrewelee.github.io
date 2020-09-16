@@ -86,6 +86,11 @@ h1 {
   text-transform: uppercase;
 }
 
+.game a.twitter {
+  font-weight: 300;
+  text-transform: none; 
+}
+
 .info {
   max-width: 600px;
 }
