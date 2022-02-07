@@ -132,7 +132,6 @@ h2 {
 }
 
 .info {
-  max-width: 600px;
 }
 
 .info p, .about p {
@@ -164,14 +163,13 @@ ul.features {
 
 ul.features li {
   vertical-align:middle;
-   font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin: 0 0 1em;
   text-align: justify;
 }
 
 .feature {
   position: relative;
-  width: 100%;
   padding-left: 1.25rem;
   padding-bottom: 1rem;
 }
@@ -187,6 +185,10 @@ ul.features li {
   border-radius: 9999px;
   background-color: #4285f4;
   top: 5px;
+}
+
+.feature a {
+  font-family: 'Raleway', sans-serif; 
 }
 
 .trailer-container {
