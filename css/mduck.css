@@ -243,6 +243,14 @@ ul.features li {
   .content {
     padding-left: 0px;
   }
+  
+  .wrapper {
+    padding: 10px;
+  }
+    
+  .info p, .about p {
+    text-align: left;
+  }
 
   .info {
     max-width: 100%;
@@ -251,7 +259,7 @@ ul.features li {
 
 @media only screen 
   and (max-width: 660px) {
-
+    
     .part img {
       max-width: 270px;
       text-align: center;
