@@ -102,6 +102,7 @@ h2 {
   margin-top: 17px;
   margin-bottom: 17px;
 }
+
 .divider {
   height: 1px;
   margin-top: 26px;
@@ -245,7 +246,7 @@ ul.features li {
   }
   
   .wrapper {
-    padding: 10px;
+    padding: 20px;
   }
     
   .info p, .about p {
