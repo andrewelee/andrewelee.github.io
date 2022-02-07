@@ -37,6 +37,8 @@ a:hover {
 }
 
 .menu-navigation-list-item a{
+  font-family: "Source Sans Pro";
+  font-weight: 300;
   font-size: 20px;
   color: #3c3c3c;
 }
@@ -62,14 +64,14 @@ a.link:hover {
 
 h1 {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 800;
 }
 
 h2 {
   font-weight: 300;
   font-family: 'Raleway', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .wrapper {
@@ -131,11 +133,14 @@ h2 {
   margin: 26px 0 26px 0;
 }
 
-.info {
+.info a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
 }
 
 .info p, .about p {
   font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
   margin: 0 0 1em;
   text-align: justify;
   color: #3c3c3c;
@@ -155,6 +160,15 @@ h2 {
 
 .part img.rounded {
   border-radius: 20px;
+}
+
+.part a {
+  font-family: 'Raleway', sans-serif;
+  color: #4285f4;
+}
+
+.part a:hover {
+  color: #0060ff;
 }
 
 ul.features {
@@ -232,9 +246,7 @@ ul.features li {
   .info {
     max-width: 100%;
   }
-
 }
-
 
 @media only screen 
   and (max-width: 660px) {
@@ -246,6 +258,4 @@ ul.features li {
       margin-bottom: 10px;
       display: block;
     }
-
-
 }
