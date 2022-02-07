@@ -178,6 +178,7 @@ ul.features {
 ul.features li {
   vertical-align:middle;
   font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
   margin: 0 0 1em;
   text-align: justify;
 }
