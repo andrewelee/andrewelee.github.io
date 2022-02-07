@@ -1,0 +1,147 @@
+/* RESET */
+
+html, body, h1, h2, ul, li, p, div, article, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  list-style: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  display: inline-block;
+  box-sizing: content-box;
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  color: inherit;
+}
+
+a {
+  color: #9a9a9a;
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+  font-size: 18px;
+}
+
+a:hover {
+  color: #0060ff;
+}
+
+a.link {
+  font-weight: 300;
+  text-transform: none;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 1.5em;
+}
+
+a.button {
+  border: 5px solid;
+  border-width: 1px;
+  padding: 8px 30px;
+  border-radius: 50px;
+  color: #4285f4;
+}
+
+a.button:hover {
+  color: #000000;
+}
+
+h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 48px;
+  font-weight: 100;
+}
+
+.wrapper {
+  padding: 50px;
+}
+
+.menu {
+  height: 100%;
+  width: 100px; 
+  position: fixed;
+  left: 50px;
+  padding-top: 20px;
+}
+
+.content {
+  padding-left: 150px;
+  max-width: 1000px;
+}
+
+.divider-container {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+.divider {
+  border: none;
+  color: #bbb;
+  background-color: #bbb;
+  height: 1px;
+}
+
+.game {
+  padding: 25px 0 0;
+}
+
+.game h2{
+  font-size: 32px;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.game .title {
+  margin: 26px 0 26px 0;
+}
+
+.info {
+  max-width: 600px;
+}
+
+.game .info p, .about p {
+  font-family: 'Raleway', sans-serif;
+  margin: 0 0 1em;
+  text-align: justify;
+}
+
+.game .status {
+  color: #909090;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.note {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+}
+
+@media only screen 
+  and (max-width: 980px) {
+
+  .menu {
+    display: none;
+  }
+
+  .content {
+    padding-left: 0px;
+  }
+
+  .info {
+    max-width: 100%;
+  }
+
+}
