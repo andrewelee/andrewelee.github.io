@@ -57,6 +57,10 @@ a.link:hover {
   color: #0060ff;
 }
 
+.author {
+  font-style: italic;
+}
+
 .label {
   color: #000000;
   font-weight: 800;
