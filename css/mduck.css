@@ -194,7 +194,12 @@ ul.features li {
   padding-bottom: 1rem;
 }
 
-.feature::before {
+.award {
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.feature::before, .award::before {
   position: absolute;
   content: "";
   left: 0;
